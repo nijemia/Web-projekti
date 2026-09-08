@@ -1,0 +1,39 @@
+@font-face {
+    font-family: mojFont;
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf');
+}
+
+h1 {
+    font-family: mojFont;
+    text-align: center;
+}
+
+.tekst {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.kvadrat {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    margin: 20px auto;
+    transform: rotateZ(200deg);
+}
+
+.slika {
+    position: absolute;
+    width: 100px;
+    animation: kretanje 6s linear infinite;
+}
+
+@keyframes kretanje {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: 90%; }
+    50% { top: 90%; left: 90%; }
+    75% { top: 90%; left: 0; }
+    100% { top: 0; left: 0; }
+}

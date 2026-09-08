@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(176, 247, 185);
+    font-family: Arial;
+    text-align: center;
+}
+@font-face {
+font-family: 'MojFont';
+src: url('Fenix.woff'); 
+}
+
+body {
+background-color: rgb(211, 255, 200);
+font-family: 'MojFont', sans-serif;
+margin: 20px;
+}
+
+nav ul {
+list-style-type: none;
+background-color: #333;
+padding: 10px;
+}
+
+nav ul li {
+display: inline;
+margin-right: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+.slika:hover {
+    transform: rotateY(180deg);
+}
+
+.slika {
+    width: 200px;
+    transition: transform 1s;
+    margin: 20px auto;
+}
+
+.pisanica {
+font-size: 50px;
+position: absolute;
+animation: kretanje 5s infinite linear;
+}
+
+#p1 { top: 100px; left: 0; }
+#p2 { top: 300px; left: 0; animation-delay: 2s;} 
+
+@keyframes kretanje {
+0% { transform: translate(0, 0); }
+50% { transform: translate(500px, 100px) rotate(180deg);}
+100% { transform: translate(0, 0); }
+}
+
+h1 {
+    text-align: center;
+  width: 500px; 
+  border: 1px solid #81bb81;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip;
+  text-shadow: 0 0 3px rgb(87, 150, 100), 0 0 5px rgb(55, 80, 64)
+}
